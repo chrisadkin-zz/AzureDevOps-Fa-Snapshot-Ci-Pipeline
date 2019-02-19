@@ -19,8 +19,7 @@ This example Azure DevOps pipeline checks a SQL Server data tools project and so
    has the necessary permissions to on and offline those database(s).
 3. purestoragedbatools installed on the build server, this in turn will install the dbatools and PureStoragePowerShellSDK
    PowerShell modules.
-4. An [Azure DevOps](https://azure.microsoft.com/en-gb/services/devops/) account, a free account will suffice for the purposes of   
-   running this example.
+4. An [Azure DevOps](https://azure.microsoft.com/en-gb/services/devops/) account, a free account will suffice for the purposes of   running this example.
 5. The build server requires the ability to communicate with Azure DevOps via https (port 443).
 6. The user databases that act as the source and target of the refresh element of the pipeline require that:
  - their datafiles and the transaction log file reside on a single FlashArray volume,
