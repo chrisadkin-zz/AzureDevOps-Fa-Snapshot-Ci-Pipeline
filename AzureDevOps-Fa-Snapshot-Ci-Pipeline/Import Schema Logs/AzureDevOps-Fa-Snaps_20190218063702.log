@@ -1,0 +1,85 @@
+18/02/2019 18:37:02	This log contains information about the import schema operation into project 'AzureDevOps-Fa-Snapshot-Ci-Pipeline' on computer 'DESKTOP-JH5C5FM' by user 'cadkin'.
+18/02/2019 18:37:02	Import of database schema has started.
+18/02/2019 18:37:08	Gathering database credentials
+18/02/2019 18:37:08	Gathering database options
+18/02/2019 18:37:08	Gathering generic database scoped configuration option
+18/02/2019 18:37:08	Gathering users
+18/02/2019 18:37:08	Gathering roles
+18/02/2019 18:37:08	Gathering application roles
+18/02/2019 18:37:08	Gathering role memberships
+18/02/2019 18:37:08	Gathering filegroups
+18/02/2019 18:37:08	Gathering full-text catalogs
+18/02/2019 18:37:08	Gathering assemblies
+18/02/2019 18:37:08	Gathering certificates
+18/02/2019 18:37:08	Gathering asymmetric keys
+18/02/2019 18:37:08	Gathering symmetric keys
+18/02/2019 18:37:08	Gathering encrypted symmetric keys
+18/02/2019 18:37:08	Gathering schemas
+18/02/2019 18:37:08	Gathering XML schema collections
+18/02/2019 18:37:08	Gathering user-defined data types
+18/02/2019 18:37:08	Gathering user-defined types
+18/02/2019 18:37:08	Gathering table types
+18/02/2019 18:37:08	Gathering unique keys for table types
+18/02/2019 18:37:08	Gathering primary keys for table types
+18/02/2019 18:37:08	Gathering indexes for table types
+18/02/2019 18:37:09	Gathering check constraints for table types
+18/02/2019 18:37:09	Gathering default constraints for table types
+18/02/2019 18:37:09	Gathering partition functions
+18/02/2019 18:37:09	Gathering partition schemes
+18/02/2019 18:37:09	Gathering functions
+18/02/2019 18:37:09	Gathering encrypted functions
+18/02/2019 18:37:09	Gathering aggregates
+18/02/2019 18:37:09	Gathering procedures
+18/02/2019 18:37:09	Gathering encrypted procedures
+18/02/2019 18:37:09	Gathering tables
+18/02/2019 18:37:09	Gathering primary keys
+18/02/2019 18:37:09	Gathering unique constraints
+18/02/2019 18:37:09	Gathering foreign keys
+18/02/2019 18:37:09	Gathering default constraints
+18/02/2019 18:37:09	Gathering check constraints
+18/02/2019 18:37:09	Gathering views
+18/02/2019 18:37:09	Gathering encrypted views
+18/02/2019 18:37:09	Gathering indexes
+18/02/2019 18:37:09	Gathering statistics
+18/02/2019 18:37:09	Gathering full-text index stoplists
+18/02/2019 18:37:09	Gathering search property lists
+18/02/2019 18:37:09	Gathering search properties
+18/02/2019 18:37:09	Gathering full-text indexes
+18/02/2019 18:37:09	Gathering column store indexes
+18/02/2019 18:37:09	Gathering spatial indexes
+18/02/2019 18:37:09	Gathering XML indexes
+18/02/2019 18:37:09	Gathering Selective XML indexes
+18/02/2019 18:37:09	Gathering encrypted triggers
+18/02/2019 18:37:09	Gathering triggers
+18/02/2019 18:37:09	Gathering encrypted and clr ddl triggers
+18/02/2019 18:37:09	Gathering ddl triggers
+18/02/2019 18:37:09	Gathering synonyms
+18/02/2019 18:37:09	Gathering defaults
+18/02/2019 18:37:09	Gathering data constraint uddt bindings
+18/02/2019 18:37:09	Gathering rules
+18/02/2019 18:37:09	Gathering data constraint uddt bindings
+18/02/2019 18:37:09	Gathering message types
+18/02/2019 18:37:09	Gathering queues
+18/02/2019 18:37:09	Gathering contracts
+18/02/2019 18:37:09	Gathering services
+18/02/2019 18:37:09	Gathering event notifications
+18/02/2019 18:37:09	Gathering remote service bindings
+18/02/2019 18:37:09	Gathering broker priorities
+18/02/2019 18:37:09	Gathering signatures
+18/02/2019 18:37:09	Gathering data compression options
+18/02/2019 18:37:09	Gathering sequence types
+18/02/2019 18:37:09	Gathering security policies
+18/02/2019 18:37:09	Gather column encryption keys
+18/02/2019 18:37:09	Gathering column master keys
+18/02/2019 18:37:09	Gathering external data sources
+18/02/2019 18:37:09	Gathering external file formats
+18/02/2019 18:37:09	Gathering external tables
+18/02/2019 18:37:09	Gathering extended properties
+18/02/2019 18:37:09	Gathering credentials
+18/02/2019 18:37:09	Gathering logins
+18/02/2019 18:37:09	Gathering server audits
+18/02/2019 18:37:09	Scanning project for duplicate elements
+18/02/2019 18:37:09	Finished duplicate element processing
+18/02/2019 18:37:10	Finished importing database.
+18/02/2019 18:37:10	A summary of the import was saved to the following location: C:\Projects\AzureDevOps-Fa-Snapshot-Ci-Pipeline\AzureDevOps-Fa-Snapshot-Ci-Pipeline\Import Schema Logs\AzureDevOps-Fa-Snaps_20190218063702.log
+18/02/2019 18:37:10	Click Finish to continue...
