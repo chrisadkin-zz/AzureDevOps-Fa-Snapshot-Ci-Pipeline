@@ -1,0 +1,31 @@
+#
+# Example Azure DevOps pipeline to:
+#
+# 1. Checkout a SQL Server data tools project
+# 2. Build the project into a DACPAC
+# 3. Refresh a development database from pseudo production, this is carried out by
+#    a call to the Invoke-PfaDbRefresh function from the PureStorageDbaTools PoSH module
+# 4. Apply the DACPAC to the development database
+#
+trigger:
+- master
+
+pool: $(agentPool)
+
+steps:
+  - task: MSBuild@1
+    displayName: 'Build DACPAC'
+    inputs:
+      solution: 'AzureDevops-Fa-Snapshot-CI-Pipeline.sln'
+      msbuildArguments: '/property:OutDir=bin\Release'
+  # Create a secret variable
+  - powershell: |
+      $securePassword = ConvertTo-SecureString -String '$(pfaPassword)' -AsPlainText -Force
+      $pfaCreds = New-Object System.Management.Automation.PSCredential '$(pfaUsername)', $securePassword
+      Invoke-PfaDbRefresh -RefreshDatabase $(refreshDatabase) `
+                          -RefreshSource   $(refreshSource) `
+                          -DestSqlInstance $(refreshTarget) `
+                          -PfaEndpoint     $(pfaEndpoint) `
+                          -PfaCredentials  $pfaCreds
+  - script: sqlpackage.exe /Action:Publish /SourceFile:"$(System.DefaultWorkingDirectory)\AzureDevops-Fa-Snapshot-Ci-Pipeline\bin\Release\AzureDevops-Fa-Snapshot-Ci-Pipeline.dacpac" /TargetConnectionString:"server=$(refreshTarget);database=$(refreshDatabase)"
+    displayName: 'Apply DACPAC'
