@@ -142,7 +142,7 @@ This example Azure DevOps pipeline checks a SQL Server data tools project and so
 
  5.  Log into GitHub using your GitHub account credentials
  
- 6.  Select <your account name>/AzureDevOps-Fa-Snapshot-Ci-Pipeline
+ 6.  Select \<your account name>/AzureDevOps-Fa-Snapshot-Ci-Pipeline
 
  7.  Hit Run, the Pipeline will fail (expected) because we need to add some parameterised value to it. At the time of
      writing there is no option to save the pipeline without running it first
