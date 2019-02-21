@@ -131,3 +131,33 @@ This example Azure DevOps pipeline checks a SQL Server data tools project and so
     `Install-Module -Name PureStorageDbaTools`
  
  ### Pipeline Creation and Configuration
+ 
+ 1.  Log into GitHub, you will need to create a GitHub account unless you already have one.#
+ 
+ 2.  Create a fork of the chrisadkin/AzureDevOps-Fa-Snapshot-Ci-Pipeline repo
+ 
+ 3.  Click on Pipeline in the pane on the left hand side of the screen and New pulldown menu, select "Build pipeline"
+
+ 4.  At the "Where is your code ?" prompt select GitHub
+
+ 5.  Log into GitHub using your GitHub account credentials
+ 
+ 6.  Select <your account name>/AzureDevOps-Fa-Snapshot-Ci-Pipeline
+
+ 7.  Hit Run, the Pipeline will fail (expected) because we need to add some parameterised value to it. At the time of
+     writing there is no option to save the pipeline without running it first
+
+ 8.  Click on the three dots (...) in the top right hand corner of the screen and select "Edit pipeline"
+ 
+ 9.  Click on the three dots (...) in the top right hand corner of the screen and select "Pipeline settings"
+
+ 10. In the variables section, create the following variables:
+
+ - `agentPool`
+ - `pfaPassword`
+ - `pfaUsername`
+ - `refreshDatabase`
+ - `refreshSource`
+ - `refreshTarget`
+ - `pfaEndpoint`
+ - `pfaCreds`
