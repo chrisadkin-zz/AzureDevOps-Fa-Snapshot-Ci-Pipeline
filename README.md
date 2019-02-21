@@ -153,11 +153,10 @@ This example Azure DevOps pipeline checks a SQL Server data tools project and so
 
  10. In the variables section, create the following variables:
 
- - `agentPool`
- - `pfaPassword`
- - `pfaUsername`
- - `refreshDatabase`
- - `refreshSource`
- - `refreshTarget`
- - `pfaEndpoint`
- - `pfaCreds`
+ - `agentPool`       name of the agent pool that contains the self hosted windows build agent
+ - `pfaUsername`     name of an account for accessing the FlashArray which the source and target databases are stored on
+ - `pfaPassword`     password of the account for accessing the FlashArray
+ - `refreshDatabase` name of the database to refresh
+ - `refreshSource`   SQL Server instance hosting the database which is the source of the refresh
+ - `refreshTarget`   SQL Server instance hosting the database which is the target of the refresh
+ - `pfaEndpoint`     ip address of the FlashArray management endpoint
