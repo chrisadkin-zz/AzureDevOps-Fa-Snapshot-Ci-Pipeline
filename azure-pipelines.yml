@@ -27,5 +27,5 @@ steps:
                           -DestSqlInstance $(refreshTarget) `
                           -PfaEndpoint     $(pfaEndpoint) `
                           -PfaCredentials  $pfaCreds
-  - script: sqlpackage.exe /Action:Publish /SourceFile:"$(System.DefaultWorkingDirectory)\AzureDevops-Fa-Snapshot-Ci-Pipeline\bin\Release\AzureDevops-Fa-Snapshot-Ci-Pipeline.dacpac" /TargetConnectionString:"server=$(refreshTarget);database=$(refreshDatabase)"
+  - script: sqlpackage.exe /Action:Publish /SourceFile:"$(System.DefaultWorkingDirectory)\AzureDevOps-Fa-Snapshot-Ci-Pipeline\bin\Release\AzureDevOps-Fa-Snapshot-Ci-Pipeline.dacpac" /TargetConnectionString:"server=$(refreshTarget);database=$(refreshDatabase)"
     displayName: 'Apply DACPAC'
