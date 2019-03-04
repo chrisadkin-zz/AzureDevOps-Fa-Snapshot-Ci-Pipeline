@@ -2,7 +2,7 @@
 Azure DevOps pipeline to illsutrate the use of a database refresh in a CI workflow.
 ## Overview
 
-![image](https://user-images.githubusercontent.com/15145995/52900364-db221e80-31ec-11e9-89f3-f17c30c6cb3d.png)
+![pipeline](https://user-images.githubusercontent.com/15145995/53748276-efc50e80-3e9c-11e9-823d-74951fef5364.PNG)
 
 This example Azure DevOps pipeline checks a SQL Server data tools project and solution out of GitHub (the code), builds this into a DACPAC (the artefact), refreshes a pseudo test database from a pseudo production database and then applies the DACPAC to the test database.
 
