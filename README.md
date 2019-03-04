@@ -1,5 +1,5 @@
 # AzureDevOps-Fa-Snapshot-Ci-Pipeline
-Azure Pipeline to illsutrate the use of a database refresh in a CI workflow.
+Azure Pipeline to illsutrate the use of a database refresh in a contunuous integration (CI) workflow.
 ## Overview
 
 ![pipeline](https://user-images.githubusercontent.com/15145995/53748276-efc50e80-3e9c-11e9-823d-74951fef5364.PNG)
