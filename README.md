@@ -1,10 +1,10 @@
 # AzureDevOps-Fa-Snapshot-Ci-Pipeline
-Azure DevOps pipeline to illsutrate the use of a database refresh in a CI workflow.
+Azure Pipeline to illsutrate the use of a database refresh in a CI workflow.
 ## Overview
 
 ![pipeline](https://user-images.githubusercontent.com/15145995/53748276-efc50e80-3e9c-11e9-823d-74951fef5364.PNG)
 
-This example Azure DevOps pipeline checks a SQL Server data tools project and solution out of GitHub (the code), builds this into a DACPAC (the artefact), refreshes a pseudo test database from a pseudo production database and then applies the DACPAC to the test database.
+This example Azure Pipeline checks a SQL Server data tools project and solution out of GitHub (the code), builds this into a DACPAC (the artefact), refreshes a pseudo test database from a pseudo production database and then applies the DACPAC to the test database.
 
 ## Build Environment Infrastructure Topology
 
@@ -13,14 +13,14 @@ This example Azure DevOps pipeline checks a SQL Server data tools project and so
 ## Prerequisites
 
 1. A windows server to self-host one or more windows build agents on.
-2. An Azure DevOps build agent for Windows installed according to the following specification:
+2. An Azure Pipeline build agent for Windows installed according to the following specification:
  - build agent configured as a windows service running under a windows domain account.
  - build agent service account can log into any target instance containing database(s) to be refreshed and
    has the necessary permissions to on and offline those database(s).
 3. purestoragedbatools installed on the build server, this in turn will install the dbatools and PureStoragePowerShellSDK
    PowerShell modules.
 4. An [Azure DevOps](https://azure.microsoft.com/en-gb/services/devops/) account, a free account will suffice for the purposes of   running this example.
-5. The build server requires the ability to communicate with Azure DevOps via https (port 443).
+5. The build server requires the ability to communicate with the Azure Pipeline service via https (port 443).
 6. The user databases that act as the source and target of the refresh element of the pipeline require that:
  - their datafiles and the transaction log file reside on a single FlashArray volume,
  - their files reside on the same FlashArray.
