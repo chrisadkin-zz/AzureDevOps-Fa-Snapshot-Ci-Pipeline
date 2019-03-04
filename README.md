@@ -8,7 +8,7 @@ This example Azure DevOps pipeline checks a SQL Server data tools project and so
 
 ## Build Environment Infrastructure Topology
 
-![image](https://user-images.githubusercontent.com/15145995/52898000-b61fb280-31d0-11e9-813e-29454f93fb97.png)
+![build-infra](https://user-images.githubusercontent.com/15145995/53748345-14b98180-3e9d-11e9-8436-5b4aa6a24622.PNG)
 
 ## Prerequisites
 
